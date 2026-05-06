@@ -734,14 +734,30 @@ section h2 {
 @media (max-width: 900px) {
   .menu-board {
     flex-direction: column;
+    /* allow the board to extend closer to the viewport edges on small screens */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .section-inner {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    max-width: 100%;
   }
 
   .menu-column {
     width: 100%;
   }
 
+  /* let the category cards expand to the full width of the column
+     while keeping a small internal gutter so the rounded corners remain visible */
   .menu-category {
     width: 100%;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 16px;
   }
 
   .about-section {
