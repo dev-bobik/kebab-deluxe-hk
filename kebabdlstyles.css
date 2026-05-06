@@ -797,7 +797,9 @@ section h2 {
   .hero-scroll-hint { display: none; }
 
   /* Sections */
-  .menu-section { padding: 4rem 1.25rem; }
+  /* Sections */
+  /* reduce outer padding on very small screens so menu cards can reach the edges */
+  .menu-section { padding: 4rem 0.25rem; }
   .info-section  { padding: 4rem 1.25rem; }
 
   section h2 { margin-bottom: 2rem; font-size: 1.5rem; }
@@ -812,6 +814,11 @@ section h2 {
   .info-map iframe { min-height: 260px; }
   .info-box     { padding: 1.5rem 1.25rem; }
   .info-boxes   { gap: 1rem; }
+
+  /* Force the menu board and its cards to use almost full width on small phones */
+  .section-inner { padding-left: 0.25rem; padding-right: 0.25rem; }
+  .menu-board { padding-left: 0; padding-right: 0; }
+  .menu-category { margin-left: -0.25rem; margin-right: -0.25rem; padding-left: 0.5rem; padding-right: 0.5rem; border-radius: 10px; }
 
   /* Footer */
   footer { padding: 2rem 1.25rem; }
