@@ -734,14 +734,14 @@ section h2 {
 @media (max-width: 900px) {
   .menu-board {
     flex-direction: column;
-    /* allow the board to extend closer to the viewport edges on small screens */
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    /* allow the board to extend very close to the viewport edges on small screens */
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .section-inner {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
     max-width: 100%;
   }
 
@@ -753,11 +753,13 @@ section h2 {
      while keeping a small internal gutter so the rounded corners remain visible */
   .menu-category {
     width: 100%;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 16px;
+    /* almost full-bleed: tiny outer gap of ~4px (0.25rem) */
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    /* keep internal padding for content */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 12px;
   }
 
   .about-section {
