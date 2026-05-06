@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebab Deluxe | Hradec Králové</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="kebabdlstyles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">
+      <span class="logo-kebab">Kebab</span><span class="logo-deluxe">Deluxe</span>
+    </a>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">O nás</a>
+      <a href="#info">Kontakt</a>
+    </nav>
+    <button class="hamburger" aria-label="Otevřít menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="#menu">Menu</a>
+    <a href="#about">O nás</a>
+    <a href="#info">Kontakt</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="zks1.png" alt="" fetchpriority="high">
+    <div class="hero-content fade-in">
+      <p class="hero-tagline">Hradec Králové</p>
+      <h1>
+        <span class="logo-kebab">Kebab</span>
+        <span class="logo-deluxe hero-deluxe">Deluxe</span>
+      </h1>
+      <p class="hero-sub">Čerstvé suroviny &mdash; poctivé porce &mdash; nezapomenutelná chuť</p>
+      <a href="#menu" class="btn">Prohlédnout menu</a>
+    </div>
+    <div class="hero-scroll-hint">&#8595;</div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="section-inner menu-shell">
+      <p class="section-label">Co nabízíme</p>
+      <h2>Menu Kebab Deluxe HK</h2>
+      <p class="menu-intro">Rozklikněte položku pro stručný popis. Menu je seřazené podle čísel a postavené tak, aby působilo čistě, symetricky a prémiově.</p>
+
+      <div class="menu-board">
+        <div class="menu-column menu-column-left">
+
+        <!-- 1 Tortilla / Dürüm -->
+        <div class="menu-category fade-in">
+          <h3>Tortilla / Dürüm</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">01</span>
+                <span class="dish-name">Dürüm kebab <small>kuřecí / hovězí</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">135 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Klasický dürüm s čerstvou zeleninou, omáčkou dle výběru a pečlivě zabalenou porcí masa.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">02</span>
+                <span class="dish-name">Dürüm kebab se sýrem</span>
+                <span class="item-header-right">
+                  <span class="dish-price">145 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Dürüm doplněný o sýr pro jemnější, krémovější a výraznější chuť.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">03</span>
+                <span class="dish-name">Dürüm kebab HAWAI</span>
+                <span class="item-header-right">
+                  <span class="dish-price">155 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Dürüm s ananasem, který dává slanému masu lehce sladký a svěží kontrast.</p></div>
+            </li>
+            <li class="menu-item dish-special">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">04</span>
+                <span class="dish-name">Dürüm SPECIÁLNÍ DELUXE MENU <small>(dle výběru)</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">195 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Extra porce masa, prémiové ingredience, hranolky a nápoj podle nabídky.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2 Döner -->
+        <div class="menu-category fade-in">
+          <h3>Chleba (Döner)</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">05</span>
+                <span class="dish-name">Döner kebab <small>kuřecí / hovězí</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">125 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Kebab v chlebu se zeleninou a omáčkou dle výběru.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">06</span>
+                <span class="dish-name">Döner kebab se sýrem</span>
+                <span class="item-header-right">
+                  <span class="dish-price">135 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Döner doplněný o sýr, který zvýrazní chuť a dodá větší plnost.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">07</span>
+                <span class="dish-name">Döner kebab HAWAI</span>
+                <span class="item-header-right">
+                  <span class="dish-price">145 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Döner s ananasem pro lehce sladkou, vyváženou chuť.</p></div>
+            </li>
+            <li class="menu-item dish-special">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">08</span>
+                <span class="dish-name">Döner SPECIÁLNÍ DELUXE MENU <small>(dle výběru)</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">185 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Extra porce masa, prémiové ingredience, hranolky a nápoj podle nabídky.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3 Vegetariánské -->
+        <div class="menu-category fade-in">
+          <h3>Vegetariánské</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">09</span>
+                <span class="dish-name">Vegetariánská tortilla / chleba <small>salát, sýr, olivy / ananas</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">110 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Bezmasá varianta se salátem, sýrem a doplněním oliv nebo ananasu.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">10</span>
+                <span class="dish-name">Falafel tortilla</span>
+                <span class="item-header-right">
+                  <span class="dish-price">140 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Falafel v tortille s čerstvou zeleninou a vyváženou kořeněnou chutí.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">11</span>
+                <span class="dish-name">Halloumi sýr tortilla</span>
+                <span class="item-header-right">
+                  <span class="dish-price">145 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Halloumi tortilla s grilovaným sýrem a svěží zeleninou.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">12</span>
+                <span class="dish-name">Falafel chleba</span>
+                <span class="item-header-right">
+                  <span class="dish-price">130 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Falafel v chlebu jako sytější vegetariánská volba.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">13</span>
+                <span class="dish-name">Halloumi sýr chleba</span>
+                <span class="item-header-right">
+                  <span class="dish-price">135 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Halloumi v chlebu s grilovaným sýrem a čerstvou zeleninou.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 4 Smažené -->
+        <div class="menu-category fade-in">
+          <h3>Smažené</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">14</span>
+                <span class="dish-name">Smažený sýr</span>
+                <span class="item-header-right"><span class="dish-price">125 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">S hranolkami 125 Kč<br />S bramborovými kroketami 135 Kč<br />S americkými bramborami 135 Kč</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">15</span>
+                <span class="dish-name">Kuřecí řízek, salát</span>
+                <span class="item-header-right"><span class="dish-price">150 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">S hranolkami 150 Kč<br />S bramborovými kroketami 160 Kč<br />S americkými bramborami 160 Kč</p></div>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+
+        <div class="menu-column menu-column-right">
+
+        <!-- 5 Box / Talíř / Miska -->
+        <div class="menu-category fade-in">
+          <h3>Box / Talíř / Miska</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">16</span>
+                <span class="dish-name">Kebab box <small>kuřecí / hovězí</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">135 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Kebab maso v praktickém boxu s omáčkou dle výběru.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">17</span>
+                <span class="dish-name">Malý kebab talíř</span>
+                <span class="item-header-right">
+                  <span class="dish-price">155 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">S hranolkami 155 Kč<br />S bramborovými kroketami 165 Kč<br />S americkými bramborami 165 Kč<br />S rýží 155 Kč</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">18</span>
+                <span class="dish-name">Velký kebab talíř</span>
+                <span class="item-header-right">
+                  <span class="dish-price">185 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">S hranolkami 185 Kč<br />S bramborovými kroketami 195 Kč<br />S americkými bramborami 195 Kč<br />S rýží 185 Kč</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">19</span>
+                <span class="dish-name">Falafel salát <small>(miska)</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">145 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Falafel na čerstvém salátu v praktické misce.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">20</span>
+                <span class="dish-name">Halloumi sýr salát <small>(miska)</small></span>
+                <span class="item-header-right">
+                  <span class="dish-price">145 Kč</span>
+                  <span class="item-arrow">+</span>
+                </span>
+              </button>
+              <div class="item-body"><p class="item-desc">Halloumi sýr na čerstvém salátu v lehké misce.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 6 Přílohy & Extra -->
+        <div class="menu-category fade-in">
+          <h3>Přílohy &amp; Extra</h3>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">21</span>
+                <span class="dish-name">Chleba / Tortilla navíc</span>
+                <span class="item-header-right"><span class="dish-price">15 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Jedna porce chleba nebo tortilly navíc.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">22</span>
+                <span class="dish-name">Extra olivy</span>
+                <span class="item-header-right"><span class="dish-price">15 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Marinované olivy jako malý doplněk k jídlu.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">23</span>
+                <span class="dish-name">Extra sýr</span>
+                <span class="item-header-right"><span class="dish-price">15 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Extra porce sýra pro plnější chuť.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">24</span>
+                <span class="dish-name">Extra ananas</span>
+                <span class="item-header-right"><span class="dish-price">20 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Sladký ananas jako doplněk ke slanému menu.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">25</span>
+                <span class="dish-name">Extra beraní rohy <small>jalapeños</small></span>
+                <span class="item-header-right"><span class="dish-price">20 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Jemně pálivé jalapeños pro výraznější chuť.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">26</span>
+                <span class="dish-name">Extra maso</span>
+                <span class="item-header-right"><span class="dish-price">40 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Extra porce masa ke každému menu.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">27</span>
+                <span class="dish-name">Rýže box</span>
+                <span class="item-header-right"><span class="dish-price">40 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Samostatná box porce rýže.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">28</span>
+                <span class="dish-name">Hranolky box</span>
+                <span class="item-header-right"><span class="dish-price">60 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Samostatná box porce hranolků.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">29</span>
+                <span class="dish-name">Bramborové krokety box</span>
+                <span class="item-header-right"><span class="dish-price">75 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Samostatná box porce bramborových kroket.</p></div>
+            </li>
+            <li class="menu-item">
+              <button class="item-header" aria-expanded="false">
+                <span class="item-number">30</span>
+                <span class="dish-name">Americké brambory box</span>
+                <span class="item-header-right"><span class="dish-price">75 Kč</span><span class="item-arrow">+</span></span>
+              </button>
+              <div class="item-body"><p class="item-desc">Samostatná box porce amerických brambor.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+
+      </div>
+
+      <p class="menu-note">Omáčky dle výběru: česneková &nbsp;·&nbsp; chilli &nbsp;·&nbsp; bylinková &nbsp;·&nbsp; kari</p>
+    </div>
+  </section>  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-img" style="background-image: url('zks1.png')"></div>
+    <div class="about-text">
+      <div class="fade-in">
+        <p class="section-label">Náš příběh</p>
+        <h2>Proč Kebab Deluxe?</h2>
+        <p>Čerstvé maso, domácí omáčky a zelenina připravovaná každý den. Žádné kompromisy &mdash; jen poctivý kebab, který vás přiměje vrátit se.</p>
+        <p>Objednávejte také přes <strong>Foodora</strong>, <strong>Bolt Food</strong> a <strong>Wolt</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info-section" id="info">
+    <div class="section-inner">
+      <p class="section-label">Přijďte k nám</p>
+      <h2>Kontakt &amp; Otevírací doba</h2>
+
+      <div class="info-layout">
+
+        <div class="info-map fade-in">
+          <a class="map-link" href="https://www.google.com/maps/place/Kebab+Deluxe/@50.2119739,15.8367535,197m/data=!3m2!1e3!4b1!4m6!3m5!1s0x470c2b396b78fed7:0x8dfed80ba43f910a!8m2!3d50.2119739!4d15.8367535!16s%2Fg%2F11nhpmmkfv?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+            <iframe
+              src="https://maps.google.com/maps?q=Kebab+Deluxe+Hradec+Kralove&output=embed&z=18"
+              title="Poloha Kebab Deluxe"
+              loading="lazy">
+            </iframe>
+          </a>
+        </div>
+
+        <div class="info-boxes">
+
+          <div class="info-box fade-in">
+            <div class="info-icon-line"></div>
+            <h3>Adresa</h3>
+            <p>Československé armády 408/51<br />500 03 Hradec Králové</p>
+            <p class="info-note">U zastávky Magistrát města</p>
+          </div>
+
+          <div class="info-box fade-in">
+            <div class="info-icon-line"></div>
+            <h3>Otevírací doba</h3>
+            <div class="hours-list">
+              <div class="hours-row">
+                <span class="hours-day">Pondělí &ndash; Pátek</span>
+                <span class="hours-time">10:00 &ndash; 20:30</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Sobota a Neděle</span>
+                <span class="hours-time">12:00 &ndash; 20:30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box fade-in">
+            <div class="info-icon-line"></div>
+            <h3>Kontakt</h3>
+            <p><a href="tel:+420733794933" class="phone-copy" data-phone="+420733794933">+420 733 794 933</a></p>
+            <p><a href="https://www.instagram.com/kebabdeluxehk/" target="_blank" rel="noopener noreferrer">Instagram &rarr; KebabDeluxeHK</a></p>
+            <p><a href="https://www.facebook.com/people/Kebab-Deluxe-HK/61586851182738/" target="_blank" rel="noopener noreferrer">Facebook &rarr; Kebab Deluxe HK</a></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">
+      <span class="logo-kebab">Kebab</span><span class="logo-deluxe footer-deluxe">Deluxe</span>
+    </p>
+    <p class="footer-sub">&copy; 2026 &nbsp;&middot;&nbsp; Hradec Králové &nbsp;&middot;&nbsp; Všechna práva vyhrazena</p>
+  </footer>
+
+  <script src="kebabdl.js"></script>
+</body>
+</html>
