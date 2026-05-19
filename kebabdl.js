@@ -1,3 +1,13 @@
+// preload dish images in background after page load
+window.addEventListener('load', () => {
+  requestIdleCallback(() => {
+    Object.values(dishImages).filter((v, i, a) => a.indexOf(v) === i).forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  });
+});
+
 // smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
