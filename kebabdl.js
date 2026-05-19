@@ -21,8 +21,10 @@ hamburger.addEventListener('click', () => {
 
 // header background on scroll
 const header = document.querySelector('header');
+const heroWrap = document.getElementById('hero-scroll-wrap');
 window.addEventListener('scroll', () => {
-  header.style.background = window.scrollY > 40
+  const threshold = heroWrap.offsetHeight - window.innerHeight;
+  header.style.background = window.scrollY >= threshold
     ? 'rgba(13,13,13,0.85)'
     : 'transparent';
 }, { passive: true });
@@ -59,6 +61,36 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// hero scroll animation
+(function () {
+  const total = 240;
+  const frames = [];
+  let lastIdx = 0;
+
+  for (let i = 1; i <= total; i++) {
+    const img = new Image();
+    img.src = 'animation_frames/ezgif-frame-' + String(i).padStart(3, '0') + '.jpg';
+    frames.push(img);
+  }
+
+  const heroImg = document.getElementById('hero-anim');
+  const wrap = document.getElementById('hero-scroll-wrap');
+
+  function onScroll() {
+    const scrolled = window.scrollY;
+    const maxScroll = wrap.offsetHeight - window.innerHeight;
+    if (maxScroll <= 0) return;
+    const progress = Math.min(Math.max(scrolled / maxScroll, 0), 1);
+    const idx = Math.min(Math.floor(progress * total), total - 1);
+    if (idx !== lastIdx && frames[idx] && frames[idx].complete) {
+      heroImg.src = frames[idx].src;
+      lastIdx = idx;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
 
 // copy phone number to clipboard
 document.querySelectorAll('.phone-copy').forEach(link => {

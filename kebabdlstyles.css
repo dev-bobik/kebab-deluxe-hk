@@ -133,15 +133,22 @@ nav a:hover { color: var(--gold); }
 .mobile-menu a:hover { color: var(--gold); }
 
 /* ── HERO ── */
+#hero-scroll-wrap {
+  height: 250vh;
+  position: relative;
+}
+
 .hero {
-  min-height: 100svh;
+  height: 100svh;
+  min-height: unset;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 8rem 1.5rem 4rem;
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
   background: var(--dark);
 }
@@ -155,6 +162,7 @@ nav a:hover { color: var(--gold); }
   object-position: center 40%;
   z-index: 0;
 }
+
 
 .hero::after {
   content: '';
@@ -790,11 +798,19 @@ section h2 {
   .mobile-menu { padding: 0.5rem 1.25rem; }
 
   /* Hero */
-  .hero { padding: 6rem 1.25rem 3rem; }
-  .hero-bg { object-fit: contain; object-position: center top; }
+  .hero { padding: 6rem 1.25rem 4rem; justify-content: flex-end; }
+  .hero-bg {
+    inset: auto;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    object-position: center center;
+  }
   .hero h1 { gap: 0.25rem; margin-bottom: 1.2rem; }
   .hero-sub { margin-bottom: 2rem; }
-  .hero-scroll-hint { display: none; }
+  #hero-scroll-wrap { height: 180vh; }
 
   /* Sections */
   /* Sections */
