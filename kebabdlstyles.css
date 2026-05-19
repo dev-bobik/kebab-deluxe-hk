@@ -507,7 +507,7 @@ section h2 {
 }
 
 .menu-item.open .item-body {
-  max-height: 520px;
+  max-height: 1200px;
 }
 
 .item-desc {
@@ -521,8 +521,7 @@ section h2 {
 .dish-img {
   display: block;
   width: calc(100% - 1.72rem);
-  height: 160px;
-  object-fit: cover;
+  height: auto;
   border-radius: 12px;
   margin: 0.8rem 0.86rem 0;
   opacity: 0;
@@ -548,18 +547,18 @@ section h2 {
 .menu-note {
   text-align: center;
   margin: 2.25rem auto 0;
-  padding: 0.95rem 1.2rem;
-  max-width: 760px;
+  padding: 4rem 2rem;
   font-size: 0.78rem;
   font-weight: 300;
   letter-spacing: 1.4px;
   color: rgba(221,213,200,.76);
   text-transform: uppercase;
   border: 1px solid rgba(255,255,255,.08);
-  border-radius: 999px;
+  max-width: 860px;
+  border-radius: 16px;
   background:
     linear-gradient(rgba(13,13,13,.78), rgba(13,13,13,.78)),
-    url('dish-images/sauces_4_ultra_hd.png') center / cover;
+    url('dish-images/omackynove.jpeg') center top / cover;
 }
 
 /* ── ABOUT ── */
@@ -837,6 +836,9 @@ section h2 {
 
   section h2 { margin-bottom: 2rem; font-size: 1.5rem; }
   .menu-note { margin-top: 2rem; }
+
+  /* Dish images */
+  .dish-img { height: 160px; object-fit: cover; object-position: center center; }
 
   /* About */
   .about-img  { min-height: 220px; order: 2; }
