@@ -507,15 +507,30 @@ section h2 {
 }
 
 .menu-item.open .item-body {
-  max-height: 360px;
+  max-height: 520px;
 }
 
 .item-desc {
-  font-size: 0.8rem;
+  font-size: 0.93rem;
   line-height: 1.85;
-  color: var(--muted);
-  padding: 0.7rem 0.25rem 0.95rem 2.85rem;
-  font-weight: 300;
+  color: var(--text);
+  padding: 0.7rem 0.86rem 0.95rem 0.86rem;
+  font-weight: 400;
+}
+
+.dish-img {
+  display: block;
+  width: calc(100% - 1.72rem);
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0.8rem 0.86rem 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.dish-img.loaded {
+  opacity: 1;
 }
 
 .dish-special .dish-name {
@@ -542,7 +557,9 @@ section h2 {
   text-transform: uppercase;
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 999px;
-  background: rgba(255,255,255,.03);
+  background:
+    linear-gradient(rgba(13,13,13,.78), rgba(13,13,13,.78)),
+    url('dish-images/sauces_4_ultra_hd.png') center / cover;
 }
 
 /* ── ABOUT ── */

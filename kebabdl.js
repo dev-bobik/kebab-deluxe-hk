@@ -29,6 +29,30 @@ window.addEventListener('scroll', () => {
     : 'transparent';
 }, { passive: true });
 
+// dish images by item number
+const dishImages = {
+  '01': 'dish-images/tortilla_sauce_ultra_hd.png',
+  '02': 'dish-images/tortilla_sauce_ultra_hd.png',
+  '03': 'dish-images/tortilla_sauce_ultra_hd.png',
+  '04': 'dish-images/kebab_wrap_final_6144x4096.png',
+  '05': 'dish-images/doner_triangle_ultra_hd.png',
+  '06': 'dish-images/doner_triangle_ultra_hd.png',
+  '07': 'dish-images/doner_triangle_ultra_hd.png',
+  '08': 'dish-images/doner_box_final_6144x4096.png',
+  '09': 'dish-images/salads_ultra_hd.png',
+  '10': 'dish-images/falafel_wrap_upscaled.png',
+  '11': 'dish-images/halloumi_wrap_ultra_hd.png',
+  '12': 'dish-images/falafel_triangle_ultra_hd_v2.png',
+  '13': 'dish-images/halloumi_triangle_ultra_hd.png',
+  '14': 'dish-images/fried_cheese_ultra_hd.png',
+  '15': 'dish-images/schnitzel_ultra_hd.png',
+  '16': 'dish-images/doner_box_final_6144x4096.png',
+  '17': 'dish-images/kebab_plate_ultra_hd.png',
+  '18': 'dish-images/kebab_plate_ultra_hd.png',
+  '19': 'dish-images/salads_6144x4096_enhanced.png',
+  '20': 'dish-images/salads_ultra_hd.png',
+};
+
 // accordion menu items
 document.querySelectorAll('.item-header').forEach(btn => {
   btn.setAttribute('aria-expanded', 'false');
@@ -46,6 +70,18 @@ document.querySelectorAll('.item-header').forEach(btn => {
     if (!wasOpen) {
       item.classList.add('open');
       btn.setAttribute('aria-expanded', 'true');
+
+      const body = item.querySelector('.item-body');
+      const num = btn.querySelector('.item-number')?.textContent.trim();
+      if (num && dishImages[num] && !body.querySelector('.dish-img')) {
+        const img = document.createElement('img');
+        img.className = 'dish-img';
+        img.alt = btn.querySelector('.dish-name')?.childNodes[0]?.textContent.trim() || '';
+        img.loading = 'lazy';
+        img.onload = () => img.classList.add('loaded');
+        img.src = dishImages[num];
+        body.prepend(img);
+      }
     }
   });
 });
